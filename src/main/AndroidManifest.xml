@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.Garima.NIDARR">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/man"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/man"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.Garima.NIDARR.Login"
+            android:exported="false" />
+        <activity
+            android:name="com.Garima.NIDARR.Signup"
+            android:exported="false" />
+        <activity
+            android:name="com.Garima.NIDARR.SplashScreen"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.Garima.NIDARR.AboutUs"
+            android:exported="true"
+            android:label="AboutUs"
+            android:parentActivityName="com.Garima.NIDARR.MainActivity"
+            android:theme="@style/Theme.New" />
+        <activity
+            android:name="com.Garima.NIDARR.MagBtnInst"
+            android:exported="true"
+            android:label="Detailed Instructions"
+            android:parentActivityName="com.Garima.NIDARR.Magnetometer"
+            android:theme="@style/Theme.New" />
+        <activity
+            android:name="com.Garima.NIDARR.SosInsructionsActivity"
+            android:exported="true"
+            android:label="SOS Instructions"
+            android:parentActivityName="com.Garima.NIDARR.SmsActivity"
+            android:theme="@style/Theme.New" />
+        <activity
+            android:name="com.Garima.NIDARR.Magnetometer"
+            android:exported="true"
+            android:label="Spy Camera Dectector"
+            android:parentActivityName="com.Garima.NIDARR.ChoosenActivity"
+            android:theme="@style/Theme.New" />
+        <activity
+            android:name="com.Garima.NIDARR.MagnoInst"
+            android:exported="true"
+            android:label="Manual Detection"
+            android:parentActivityName="com.Garima.NIDARR.ChoosenActivity"
+            android:theme="@style/Theme.New" />
+        <activity
+            android:name="com.Garima.NIDARR.Outside"
+            android:exported="true"
+            android:label="Outside Instructions"
+            android:parentActivityName="com.Garima.NIDARR.MagnoInst"
+            android:theme="@style/Theme.New" />
+        <activity
+            android:name="com.Garima.NIDARR.ChangingRoom"
+            android:exported="true"
+            android:label="ChangingRoom Instructions"
+            android:parentActivityName="com.Garima.NIDARR.MagnoInst"
+            android:theme="@style/Theme.New" />
+        <activity
+            android:name="com.Garima.NIDARR.Bedroom"
+            android:exported="true"
+            android:label="Bedroom Instructions"
+            android:parentActivityName="com.Garima.NIDARR.MagnoInst"
+            android:theme="@style/Theme.New" />
+        <activity
+            android:name="com.Garima.NIDARR.Bathroom"
+            android:exported="true"
+            android:label="Bathroom Instructions"
+            android:parentActivityName="com.Garima.NIDARR.MagnoInst"
+            android:theme="@style/Theme.New" />
+        <activity
+            android:name="com.Garima.NIDARR.ChoosenActivity"
+            android:exported="true"
+            android:label="Detect Hidden Cameras"
+            android:parentActivityName="com.Garima.NIDARR.MainActivity"
+            android:theme="@style/Theme.New" />
+        <activity
+            android:name="com.Garima.NIDARR.NewsActivity"
+            android:exported="true"
+            android:label="Women&apos;s News"
+            android:parentActivityName="com.Garima.NIDARR.MainActivity"
+            android:theme="@style/Theme.New" />
+        <activity
+            android:name="com.Garima.NIDARR.Instructions"
+            android:label="App Tour"
+            android:parentActivityName="com.Garima.NIDARR.MainActivity"
+            android:theme="@style/Theme.New" />
+        <activity android:name="com.Garima.NIDARR.webactivity" />
+        <activity
+            android:name="com.Garima.NIDARR.SmsActivity"
+            android:label="Emergency Service"
+            android:parentActivityName="com.Garima.NIDARR.MainActivity"
+            android:theme="@style/Theme.New" />
+        <activity android:name="com.Garima.NIDARR.CurrentLocation" />
+        <activity android:name="com.Garima.NIDARR.Flashing" />
+        <activity android:name="com.Garima.NIDARR.SplashActivity"
+            android:exported="true">
+
+        </activity>
+        <activity android:name="com.Garima.NIDARR.MainActivity" />
+
+        <receiver android:name="com.Garima.NIDARR.ScreenOnOffReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.SCREEN_OFF" />
+                <action android:name="android.intent.action.SCREEN_ON" />
+                <action android:name="number.action.string" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.Garima.NIDARR.ScreenOnOffBackgroundService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

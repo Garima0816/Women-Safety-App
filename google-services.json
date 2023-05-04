@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "678455397616",
+    "project_id": "nidarr-78f26",
+    "storage_bucket": "nidarr-78f26.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678455397616:android:d8a64f7bda5ab256168635",
+        "android_client_info": {
+          "package_name": "com.Garima.NIDARR"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678455397616-jjcbd5n6r8usb9bpf2mut86jhclkgl43.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbTAaL-8QdMM2455ZuvNdNrhrNi7c0YAg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678455397616-jjcbd5n6r8usb9bpf2mut86jhclkgl43.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
